@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.html">
+</head>
+<body>
+    <h1 id="title"></h1>
+
+
+
+    <label>Maths:</label>
+    <input type="text" id="maths"><br><br>
+    <label>English:</label>
+    <input type="text" id="english"><br><br>
+    <label>Gujrati:</label>
+    <input type="text" id="gujrati"><br><br>
+    <label>Science:</label>
+    <input type="text" id="science"><br><br>
+    <label>Economics:</label>
+    <input type="text" id="economics"><br><br>
+    <button onclick="submit()">Calculate</button>
+
+   
+    <script>
+
+        function submit(){
+            let maths = parseInt(document.getElementById("maths").value)
+            let eng = parseInt(document.getElementById("english").value)
+            let guj = parseInt(document.getElementById("gujrati").value)
+            let sci = parseInt(document.getElementById("science").value)
+            let eco = parseInt(document.getElementById("economics").value)
+            
+            let total = maths + eng + guj + sci + eco; 
+            let avg = total / 5
+
+            console.log(avg);
+            
+        }
+    </script>
+</body>
+</html>
